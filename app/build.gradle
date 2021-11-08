@@ -1,0 +1,53 @@
+plugins {
+    id 'com.android.application'
+}
+pluginsx {
+id 'onekit'
+    id 'kotlin'
+    id 'init'
+}
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        applicationId "com.example.myapplication123"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation platform('com.volcengine.mars:platform:0.0.1-rc.46')
+
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'com.volcengine.onekit:onekit'
+    implementation 'com.volcengine.mars:dev-tool'
+    implementation 'com.volcengine.mars:base-component'
+    implementation 'com.bytedance.lego:init-api'
+    implementation 'com.bytedance.lego:init-scheduler'
+
+    implementation 'com.volcengine.services:update-impl:1.0.0-rc.22'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
+apply from: "https://lf3-fwk-res.vemarsstatic.com/obj/mars-plugin/bytebus.gradle"

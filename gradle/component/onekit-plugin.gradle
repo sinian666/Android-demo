@@ -1,0 +1,12 @@
+/**
+ * onekit component gradle script
+ */
+project.buildscript.dependencies.with {
+    classpath "com.volcengine.onekit:onekit-plugin:0.0.1-rc.20"
+}
+
+project.ext.marsAppTasks.put("onekit", { p ->
+    p.with {
+        apply plugin: 'com.volcengine.onekit.plugin'
+    }
+})
