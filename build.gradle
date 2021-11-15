@@ -6,13 +6,14 @@ buildscript {
         maven {
             url 'https://artifact.bytedance.com/repository/Volcengine/'
             name 'volcengine'
+        }
+	 maven {
             url 'https://artifact.bytedance.com/repository/AwemeOpenSDK/'
             name 'AwemeOpenSDK'
             credentials {
                 username 'aweme-open-sdk-team'
                 password 'kT092GfY159u6Yyx'
             }
- 
         }
         mavenCentral()
     }
@@ -28,9 +29,11 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven {
+         maven {
             url 'https://artifact.bytedance.com/repository/Volcengine/'
             name 'volcengine'
+        }
+	 maven {
             url 'https://artifact.bytedance.com/repository/AwemeOpenSDK/'
             name 'AwemeOpenSDK'
             credentials {
@@ -44,4 +47,6 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
 }
