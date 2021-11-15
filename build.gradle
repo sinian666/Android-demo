@@ -12,7 +12,7 @@ buildscript {
                 username 'aweme-open-sdk-team'
                 password 'kT092GfY159u6Yyx'
             }
-            
+ 
         }
         mavenCentral()
     }
@@ -36,6 +36,7 @@ allprojects {
             credentials {
                 username 'aweme-open-sdk-team'
                 password 'kT092GfY159u6Yyx'
+            }
         }
         mavenCentral()
     }
