@@ -46,6 +46,7 @@ dependencies {
     implementation 'com.bytedance.lego:init-scheduler'
 
     implementation 'com.volcengine.services:update-impl:1.0.0-rc.22'
+    implementation 'com.component.demo:lib-android:0.0.17.full'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
