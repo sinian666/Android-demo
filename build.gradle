@@ -4,6 +4,8 @@ buildscript {
         google()
         jcenter()
         maven {
+            url 'https://artifact.bytedance.com/repository/Volcengine/'
+            name 'volcengine'
             url 'https://artifact.bytedance.com/repository/AwemeOpenSDK/'
             name 'AwemeOpenSDK'
             credentials {
@@ -27,6 +29,8 @@ allprojects {
         google()
         jcenter()
         maven {
+            url 'https://artifact.bytedance.com/repository/Volcengine/'
+            name 'volcengine'
             url 'https://artifact.bytedance.com/repository/AwemeOpenSDK/'
             name 'AwemeOpenSDK'
             credentials {
